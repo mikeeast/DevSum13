@@ -1,0 +1,154 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>DevSum13 | Weird and Wonderful Knockout.js by Mikael Östberg</title>
+
+    <meta name="description" content="This is the slides for a lightning talk on the History on Web Development" />
+    <meta name="author" content="Bartek Szopka" />
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+
+    <link href="css/pres.css" rel="stylesheet" />
+
+    <!-- 
+        Made using impress.js 
+        https://github.com/bartaz/impress.js
+
+    -->
+</head>
+<body class="impress-not-supported">
+    <div class="fallback-message">
+        <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+        <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+    </div>
+    <div id="impress">
+        <div id="start" class="step" data-x="0" data-y="0" data-z="0">
+            <q class="center">Mikael Östberg<br />
+                <a href="https://twitter.com/MikaelOstberg">@mikaelostberg</a><br />
+                <a href="http://inloop.se">inloop.se</a>
+            </q>
+        </div>
+
+        <div id="title" class="step" data-x="2000" data-y="0" data-z="-1000">
+            <q class="center">Weird and Wonderful
+                <br />
+                <img src="img/ko-logo.png" /></q>
+        </div>
+
+        <div id="what" class="step" data-x="4000" data-y="0" data-z="-2000">
+            What is MVVM?
+            <br />
+            ..and why should I care
+        </div>
+
+        <div id="what2" class="step" data-x="4000" data-y="1000" data-z="-2000">
+            Model as in Model
+            <br />
+            View as in View
+            <br />
+            View Model as in Model of the View
+        </div>
+
+        <div id="what3" class="step" data-x="4000" data-y="2000" data-z="-2000">
+            Separating data and presentation
+            <br />
+        </div>
+
+        <div id="what4" class="step" data-x="4000" data-y="2000" data-z="-2000">
+            &nbsp;
+            <br />
+            <br />
+            &nbsp;&nbsp;&nbsp;..again
+        </div>
+
+        <div id="why" class="step" data-x="6000" data-y="2000" data-z="-2000">
+            Why MVVM?
+        </div>
+
+        <div id="why2" class="step" data-x="6000" data-y="2500" data-z="-2000">
+            &middot; Create rich dynamic UIs
+            <br/>
+            &middot; Be awesome
+        </div>
+
+        <div id="old" class="step" data-x="6000" data-y="3000" data-z="-2000">
+            This what I used to do
+        </div>
+        <div id="old-asp" class="step" data-x="6000" data-y="4000" data-z="-2000">
+            1999<br />
+            <img src="img/code_asp.png" />
+        </div>
+        <div id="old-php" class="step" data-x="6000" data-y="5000" data-z="-2000">
+            2001<br />
+            <img src="img/code_php.png" />
+        </div>
+        <div id="old-epi" class="step" data-x="6000" data-y="6000" data-z="-2000">
+            2004<br />
+            <img src="img/code_epi.png" />
+        </div>
+        <div id="old-webforms" class="step" data-x="6000" data-y="7000" data-z="-2000">
+            2005<br />
+            <img src="img/code_webforms.png" />
+        </div>
+        <div id="old-mvc1" class="step" data-x="6000" data-y="8000" data-z="-2000">
+            2007<br />
+            <img src="img/code_mvc1.png" />
+        </div>
+        <div id="old-mvc2" class="step" data-x="6000" data-y="9000" data-z="-2000">
+            2011<br />
+            <img src="img/code_mvc2.png" />
+        </div>
+        <div id="why-common" class="step" data-x="6000" data-y="7000" data-z="2000">
+            What do they all share in common?
+        </div>
+        <div id="why-common2" class="step" data-x="6000" data-y="7000" data-z="2000">
+            &nbsp;
+            <br />
+            <br />
+            &nbsp;&nbsp;&nbsp;..they are all server side
+        </div>
+        <div id="why-lets" class="step" data-x="8000" data-y="7000" data-z="2000">
+            Let's look at what we really are working with
+        </div>
+        <div id="why-model" class="step" data-x="10000" data-y="7000" data-z="2000">
+            <div class="box">html</div>
+            <div class="box">js</div>
+            <div class="box">http</div>
+            <div class="box">data</div>
+        </div>
+
+
+
+        <div id="overview" class="step" data-x="5000" data-y="-2500" data-z="0" data-scale="8">
+        </div>
+
+    </div>
+    <script>
+        if ("ontouchstart" in document.documentElement) {
+            document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+        }
+    </script>
+
+    <!--
+    
+    Last, but not least.
+    
+    To make all described above really work, you need to include impress.js in the page.
+    I strongly encourage to minify it first.
+    
+    In here I just include full source of the script to make it more readable.
+    
+    You also need to call a `impress().init()` function to initialize impress.js presentation.
+    And you should do it in the end of your document. Not only because it's a good practice, but also
+    because it should be done when the whole document is ready.
+    Of course you can wrap it in any kind of "DOM ready" event, but I was too lazy to do so ;)
+    
+-->
+    <script src="js/impress.js"></script>
+    <script src="js/knockout-2.2.1.js"></script>
+    <script>impress().init();</script>
+</body>
+</html>
