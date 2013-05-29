@@ -1,0 +1,31 @@
+﻿@model dynamic
+
+@section Scripts
+{
+    <script src="/Scripts/Api/api.js"></script>
+    <script src="/Scripts/Views/twitterClient.js"></script>
+    <script>
+        var vm = new twitterClient();
+        ko.applyBindings(vm);
+    </script>
+}
+
+<h4>DevSum13 Tweets <i class="icon-refresh" data-bind="click: search"></i></h4>
+<div class="row">
+    <div class="span6">
+        <ul data-bind="foreach: currentTweets" class="unstyled tweets">
+            <li>
+                <img class="img-rounded" data-bind="attr: { src: profile_image_url }"/>    
+                <div class="tweet">
+                    <div>
+                        <strong data-bind="text: from_user_name"></strong> 
+                        <span data-bind="text: '@@' + from_user"></span>
+                        <div class="pull-right" data-bind="text: created_at"></div>
+                    </div>
+                    <p data-bind="text: text"></p>    
+                </div>
+            </li>
+        </ul>        
+    </div>
+</div>
+

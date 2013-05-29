@@ -257,7 +257,25 @@ a:focus {
     width: 200px;
     text-align: center;
     vertical-align: middle;
-    border: 1px solid #aaa;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+}
+#why-model-marked .mark {
+    background-color: #87A96B;
+}
+
+#why-model-marked .borders {
+    
 }
 
 q.center {
@@ -267,7 +285,9 @@ q.center {
 }
 
 .impress-on-what3 #what4,
-.impress-on-why-common #why-common2
+.impress-on-why-common #why-common2,
+.impress-on-why-model #why-model-marked,
+.impress-on-thanks #thanks2
  { display: none; }
 
 /*

@@ -1,14 +1,13 @@
-﻿using System.Linq;
-using System.Web.Mvc;
-using Example.Data;
+﻿using System.Web.Mvc;
 
 namespace Example.Controllers
 {
-    public class HomeController : Controller
+    public class TwitterClientController : Controller
     {
         public ActionResult Index()
         {
             return View();
         }
+
     }
 }

@@ -1,0 +1,20 @@
+﻿.tweets li {
+    position: relative;
+    min-height: 60px;
+    padding: 9px 12px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.tweets li img {
+    position: absolute;
+    left: 0;
+}
+
+.tweets li .tweet {
+    position: absolute;
+    left: 54px;
+}
+
+.tweets li .tweet p {
+    width: 500px;
+}

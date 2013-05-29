@@ -1,0 +1,24 @@
+﻿@model dynamic
+
+<div class="row">
+    <div class="span6">
+        <h4>This is generated server side</h4>
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th><a href="@Url.Action("Index", (object)new { sortOrder = ViewBag.NameSortParm })">Name</a></th>
+                    <th><a href="@Url.Action("Index", new { sortOrder = ViewBag.PriceSortParm })">Price</a></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var book in Model)
+                {
+                    <tr>
+                        <td>@book.Name</td>
+                        <td>@book.Price</td>
+                    </tr>    
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

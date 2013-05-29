@@ -1,0 +1,51 @@
+﻿@model dynamic
+
+@section Scripts {
+    <script src="/Scripts/Api/api.js"></script>
+    <script src="/Scripts/Api/models.js"></script>
+    <script src="/Scripts/Views/bookList.js"></script>
+    <script>
+        var vm = new bookList();
+        ko.applyBindings(vm);
+    </script>
+}
+
+<div class="row">
+    <div class="span6">
+        <h4>This is bound on the client</h4> 
+        <a href="#" data-bind="click: addBook"><i class="icon-plus-sign"></i> Add book</a>
+        <select data-bind="options: distinctAuthors, optionsText: 'fullName', optionsCaption: 'No filter', value: selectedAuthor"></select>
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th><a href="#" data-bind="click: function() { sort('Name'); }">Name</a></th>
+                    <th><a href="#" data-bind="click: function() { sort('Price'); }">Price</a></th>
+                </tr>
+            </thead>
+            <tbody data-bind="foreach: filteredBooks">
+                <tr data-bind="click: $parent.select, css: { success: isSelected }">
+                    <td data-bind="text: Name"></td>
+                    <td data-bind="text: Price"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="span6" data-bind="with: selectedBook">
+        <div>
+            <form>
+                <legend data-bind="text: Name"></legend>
+                <fieldset>
+                    <div>
+                        <img data-bind="attr: { src: '/Content/Images/' + ImageUrl() }"/>    
+                    </div>
+            
+                    <label>Name</label>
+                    <input type="text" data-bind="value: Name, valueUpdate: 'keyup'" class="input input-xlarge"/>
+                    <label>Price</label>
+                    <input type="text" data-bind="value: Price, valueUpdate: 'keyup'" class="input"/>
+                </fieldset>
+            </form>
+            
+        </div>
+    </div>
+</div>
