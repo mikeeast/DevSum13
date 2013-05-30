@@ -1,79 +1,179 @@
-<!DOCTYPE html>
-<html>
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>DevSum13 | Weird and Wonderful Knockout.js by Mikael Östberg</title>
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Devsum13 : " />
+    <meta name="description" content="This is the slides for a lightning talk on the History on Web Development" />
+    <meta name="author" content="Bartek Szopka" />
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
 
-    <title>Devsum13</title>
-  </head>
+    <link href="css/pres.css" rel="stylesheet" />
 
-  <body>
+    <!-- 
+        Made using impress.js 
+        https://github.com/bartaz/impress.js
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/MikeEast/DevSum13">View on GitHub</a>
-
-          <h1 id="project_title">Devsum13</h1>
-          <h2 id="project_tagline"></h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/MikeEast/DevSum13/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/MikeEast/DevSum13/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
+    -->
+</head>
+<body class="impress-not-supported">
+    <div class="fallback-message">
+        <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+        <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
     </div>
+    <div id="impress">
+        <div id="start" class="step" data-x="0" data-y="0" data-z="0">
+            <q class="center">Mikael Östberg<br />
+                <a href="https://twitter.com/MikaelOstberg">@mikaelostberg</a><br />
+            </q>
+        </div>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+        <div id="title" class="step" data-x="2000" data-y="0" data-z="-1000">
+            <q class="center">Weird and Wonderful
+                <br />
+                <img src="img/ko-logo.png" /></q>
+        </div>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+        <div id="what" class="step" data-x="4000" data-y="0" data-z="-2000">
+            What is MVVM?
+            <br />
+            ..and why should I care
+        </div>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+        <div id="what2" class="step" data-x="4000" data-y="1000" data-z="-2000">
+            Model as in Model
+            <br />
+            View as in View
+            <br />
+            View Model as in Model of the View
+        </div>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+        <div id="what3" class="step" data-x="4000" data-y="2000" data-z="-2000">
+            Separating data and presentation
+            <br />
+        </div>
 
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+        <div id="what4" class="step" data-x="4000" data-y="2000" data-z="-2000">
+            &nbsp;
+            <br />
+            <br />
+            &nbsp;&nbsp;&nbsp;..again
+        </div>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+        <div id="why" class="step" data-x="6000" data-y="2000" data-z="-2000">
+            Why MVVM?
+        </div>
 
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+        <div id="why2" class="step" data-x="7000" data-y="2500" data-z="-2000">
+            &middot; Create rich dynamic UIs
+            <br/>
+            &middot; Be awesome
+        </div>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+        <div id="old" class="step" data-x="6000" data-y="3000" data-z="-2000">
+            This is what I used to do
+        </div>
+        <div id="old-asp" class="step" data-x="6000" data-y="4000" data-z="-2000">
+            1999<br />
+            <img src="img/code_asp.png" />
+        </div>
+        <div id="old-php" class="step" data-x="6000" data-y="5000" data-z="-2000">
+            2001<br />
+            <img src="img/code_php.png" />
+        </div>
+        <div id="old-epi" class="step" data-x="6000" data-y="6000" data-z="-2000">
+            2004<br />
+            <img src="img/code_epi.png" />
+        </div>
+        <div id="old-webforms" class="step" data-x="6000" data-y="7000" data-z="-2000">
+            2005<br />
+            <img src="img/code_webforms.png" />
+        </div>
+        <div id="old-mvc1" class="step" data-x="6000" data-y="8000" data-z="-2000">
+            2007<br />
+            <img src="img/code_mvc1.png" />
+        </div>
+        <div id="old-mvc2" class="step" data-x="6000" data-y="9000" data-z="-2000">
+            2011<br />
+            <img src="img/code_mvc2.png" />
+        </div>
+        <div id="why-common" class="step" data-x="6000" data-y="7000" data-z="2000">
+            What do they all share in common?
+        </div>
+        <div id="why-common2" class="step" data-x="6000" data-y="7000" data-z="2000">
+            &nbsp;
+            <br />
+            <br />
+            &nbsp;&nbsp;&nbsp;..they are all server side
+        </div>
+        <div id="why-lets" class="step" data-x="8000" data-y="7000" data-z="2000">
+            Let's look at what we really are working with
+        </div>
+        <div id="why-model" class="step" data-x="10000" data-y="7000" data-z="1000">
+            <div class="box">html</div>
+            <div class="box">js</div>
+            <div class="box">http</div>
+            <div class="box">data</div>
+        </div>
+        <div id="why-model-marked" class="step" data-x="10000" data-y="7000" data-z="1000">
+            <div class="box mark">html</div>
+            <div class="box mark">js</div>
+            <div class="box">http</div>
+            <div class="box">data</div>
+        </div>
 
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
+        <div id="why-knockout" class="step" data-x="12000" data-y="7000" data-z="0">
+            Why Knockoutjs?
+        </div>
+        
+        <div id="why-knockout2" class="step" data-x="13000" data-y="8000" data-z="0">
+            &middot; Comes with ASP.NET MVC 4<br/>
+            &middot; Excellent documentation<br/>
+            &middot; Active Community<br/>
+            &middot; Many and useful plugins<br/>
+        </div>
+        
+        <div id="show-me" class="step" data-x="13000" data-y="9000" data-z="0">
+            Show me.
+        </div>
+        
+        <div id="thanks" class="step" data-x="13000" data-y="19000" data-z="0" data-scale="4">
+            Thanks!
+        </div>
+        <div id="thanks2" class="step" data-x="13000" data-y="19000" data-z="0" data-scale="8">
+            &nbsp;
+            <br />
+            <br />
+            &nbsp;&nbsp;&nbsp;..now please rate the session
+        </div>
+        
     </div>
+    <script>
+        if ("ontouchstart" in document.documentElement) {
+            document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+        }
+    </script>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Devsum13 maintained by <a href="https://github.com/MikeEast">MikeEast</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
+    <!--
     
-
-  </body>
+    Last, but not least.
+    
+    To make all described above really work, you need to include impress.js in the page.
+    I strongly encourage to minify it first.
+    
+    In here I just include full source of the script to make it more readable.
+    
+    You also need to call a `impress().init()` function to initialize impress.js presentation.
+    And you should do it in the end of your document. Not only because it's a good practice, but also
+    because it should be done when the whole document is ready.
+    Of course you can wrap it in any kind of "DOM ready" event, but I was too lazy to do so ;)
+    
+-->
+    <script src="js/impress.js"></script>
+    <script src="js/knockout-2.2.1.js"></script>
+    <script>impress().init();</script>
+</body>
 </html>
